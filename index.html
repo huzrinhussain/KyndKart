@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KyndKart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="min-h-screen bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="/" class="flex items-center">
+              <i data-lucide="leaf" class="h-8 w-8 text-green-600"></i>
+              <span class="ml-2 text-xl font-bold text-gray-900">KyndKart</span>
+            </a>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#features"
+              class="text-gray-600 hover:text-green-600 transition-colors"
+              >Features</a
+            >
+            <a
+              href="#impact"
+              class="text-gray-600 hover:text-green-600 transition-colors"
+              >Impact</a
+            >
+            <a
+              href="#team"
+              class="text-gray-600 hover:text-green-600 transition-colors"
+              >Team</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-600 hover:text-green-600 transition-colors"
+              >Contact</a
+            >
+            <button
+              class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-colors"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button
+              class="text-gray-600 hover:text-green-600 focus:outline-none"
+            >
+              <i data-lucide="menu" class="h-6 w-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+          <a
+            href="#features"
+            class="block px-3 py-2 text-gray-600 hover:text-green-600 transition-colors"
+            >Features</a
+          >
+          <a
+            href="#impact"
+            class="block px-3 py-2 text-gray-600 hover:text-green-600 transition-colors"
+            >Impact</a
+          >
+          <a
+            href="#team"
+            class="block px-3 py-2 text-gray-600 hover:text-green-600 transition-colors"
+            >Team</a
+          >
+          <a
+            href="#contact"
+            class="block px-3 py-2 text-gray-600 hover:text-green-600 transition-colors"
+            >Contact</a
+          >
+          <button
+            class="w-full mt-2 bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-colors"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Add padding to account for fixed navbar -->
+    <div class="pt-16">
+      <!-- Hero Section -->
+      <header class="relative bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+              <h1 class="text-5xl font-bold text-green-800 mb-6">
+                Reduce Food Waste,<br />Save Our Planet
+              </h1>
+              <p class="text-xl text-gray-600 mb-8">
+                KyndKart uses AI-powered technology to connect surplus food with
+                those who need it, creating a more sustainable future for
+                everyone.
+              </p>
+              <div class="flex gap-4">
+                <button
+                  class="bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors flex items-center gap-2"
+                >
+                  Get Started <i data-lucide="arrow-right" class="h-5 w-5"></i>
+                </button>
+                <button
+                  class="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition-colors"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+            <div class="md:w-1/2">
+              <img
+                src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&q=80"
+                alt="Food Sustainability"
+                class="rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Features Section -->
+      <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">
+            How KyndKart Works
+          </h2>
+          <div class="grid md:grid-cols-3 gap-12">
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+              <div class="text-4xl mb-4">
+                <i data-lucide="camera" class="text-green-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                AI Food Recognition
+              </h3>
+              <p class="text-gray-600">
+                Smart image analysis identifies and categorizes surplus food
+                automatically.
+              </p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+              <div class="text-4xl mb-4">
+                <i data-lucide="map-pin" class="text-green-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                Real-time Mapping
+              </h3>
+              <p class="text-gray-600">
+                Geolocation tracking to efficiently connect donors with
+                recipients.
+              </p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+              <div class="text-4xl mb-4">
+                <i data-lucide="recycle" class="text-green-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                Waste Management
+              </h3>
+              <p class="text-gray-600">
+                Integrated composting and recycling solutions for unavoidable
+                waste.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact Section -->
+      <section id="impact" class="py-20 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+              <img
+                src="https://images.unsplash.com/photo-1594498653385-d5172c532c00?auto=format&fit=crop&w=800&q=80"
+                alt="Community Impact"
+                class="rounded-2xl shadow-xl"
+              />
+            </div>
+            <div class="md:w-1/2">
+              <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                Making a Real Impact
+              </h2>
+              <div class="grid grid-cols-2 gap-8">
+                <div class="text-center">
+                  <p class="text-3xl font-bold text-gray-900">2000+</p>
+                  <p class="text-lg text-gray-600">Active Users</p>
+                </div>
+                <div class="text-center">
+                  <p class="text-3xl font-bold text-gray-900">5000kg</p>
+                  <p class="text-lg text-gray-600">Food Saved</p>
+                </div>
+                <div class="text-center">
+                  <p class="text-3xl font-bold text-gray-900">150+</p>
+                  <p class="text-lg text-gray-600">Partner Restaurants</p>
+                </div>
+                <div class="text-center">
+                  <p class="text-3xl font-bold text-gray-900">95%</p>
+                  <p class="text-lg text-gray-600">Waste Reduction</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">
+            Meet Our Team
+          </h2>
+          <p class="text-xl text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+            Passionate individuals working together to revolutionize food waste
+            management and create a sustainable future.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Team Member 1 -->
+            <div class="text-center">
+              <div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-4">
+                <img
+                  src="images/Sajanthan.jpg"
+                  alt="Vasanthan Sajanthan"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">
+                Vasanthan Sajanthan
+              </h3>
+              <p class="text-gray-600">Project Leader</p>
+              <div class="flex justify-center gap-4 mt-4">
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="github"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="linkedin"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="twitter"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="text-center">
+              <div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-4">
+                <img
+                  src="images/Shangari.jpg"
+                  alt="Shangari Ganesharajah"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">
+                Shangari Ganesharajah
+              </h3>
+              <p class="text-gray-600">Team Member</p>
+              <div class="flex justify-center gap-4 mt-4">
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="github"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="linkedin"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="twitter"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="text-center">
+              <div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-4">
+                <img
+                  src="images/Rishvini.jpg"
+                  alt="Tharumarasa Risvini"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">
+                Tharumarasa Risvini
+              </h3>
+              <p class="text-gray-600">Team Member</p>
+              <div class="flex justify-center gap-4 mt-4">
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="github"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="linkedin"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="twitter"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="text-center">
+              <div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-4">
+                <img
+                  src="images/Kaif.jpg"
+                  alt="Thanzeel Abdullah Bin Kaiff"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">
+                Thanzeel Abdullah Bin Kaiff
+              </h3>
+              <p class="text-gray-600">Team Member</p>
+              <div class="flex justify-center gap-4 mt-4">
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="github"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="linkedin"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="twitter"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Team Member 5 -->
+            <div class="text-center">
+              <div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-4">
+                <img
+                  src="images/Juzail.jpg"
+                  alt="Juzail Zabrin"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">Juzail Zabrin</h3>
+              <p class="text-gray-600">Team Member</p>
+              <div class="flex justify-center gap-4 mt-4">
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="github"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="linkedin"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="twitter"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Team Member 6 -->
+            <div class="text-center">
+              <div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-4">
+                <img
+                  src="images/Huzrin.jpg"
+                  alt="Huzrin Hussain"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">
+                Huzrin Hussain
+              </h3>
+              <p class="text-gray-600">Team Member</p>
+              <div class="flex justify-center gap-4 mt-4">
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="github"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="linkedin"></i
+                ></a>
+                <a href="#" class="text-gray-600 hover:text-green-600"
+                  ><i data-lucide="twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-20 bg-green-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-3xl font-bold mb-6">
+            Join the Food Waste Revolution
+          </h2>
+          <p class="text-xl mb-8 max-w-2xl mx-auto">
+            Be part of the solution. Start reducing food waste and making a
+            positive impact today.
+          </p>
+          <button
+            class="bg-white text-green-800 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition-colors"
+          >
+            Download KyndKart
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-4 gap-8">
+            <div>
+              <h3 class="text-xl font-bold mb-4">KyndKart</h3>
+              <p class="text-gray-400">
+                Making food sustainability accessible to everyone.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-4">Quick Links</h4>
+              <ul class="space-y-2 text-gray-400">
+                <li>About Us</li>
+                <li>Features</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-4">Legal</h4>
+              <ul class="space-y-2 text-gray-400">
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Cookie Policy</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-4">Connect</h4>
+              <div class="flex space-x-4">
+                <i
+                  data-lucide="github"
+                  class="hover:text-green-500 cursor-pointer"
+                ></i>
+                <i
+                  data-lucide="twitter"
+                  class="hover:text-green-500 cursor-pointer"
+                ></i>
+                <i
+                  data-lucide="linkedin"
+                  class="hover:text-green-500 cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
