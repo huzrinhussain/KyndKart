@@ -6,6 +6,28 @@
     <title>KyndKart</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      // JavaScript to toggle mobile menu and hamburger icon
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuIcon = document.getElementById("menu-icon");
+        const closeIcon = document.getElementById("close-icon");
+
+        mobileMenuButton.addEventListener("click", function () {
+          const isHidden = mobileMenu.classList.contains("hidden");
+          if (isHidden) {
+            mobileMenu.classList.remove("hidden");
+            menuIcon.classList.add("hidden");
+            closeIcon.classList.remove("hidden");
+          } else {
+            mobileMenu.classList.add("hidden");
+            menuIcon.classList.remove("hidden");
+            closeIcon.classList.add("hidden");
+          }
+        });
+      });
+    </script>
   </head>
   <body class="min-h-screen bg-white">
     <!-- Navigation -->
@@ -51,16 +73,20 @@
           <!-- Mobile menu button -->
           <div class="md:hidden flex items-center">
             <button
+              id="mobile-menu-button"
               class="text-gray-600 hover:text-green-600 focus:outline-none"
             >
-              <i data-lucide="menu" class="h-6 w-6"></i>
+              <!-- Hamburger Icon -->
+              <i id="menu-icon" data-lucide="menu" class="h-6 w-6"></i>
+              <!-- Close Icon (hidden by default) -->
+              <i id="close-icon" data-lucide="x" class="h-6 w-6 hidden"></i>
             </button>
           </div>
         </div>
       </div>
 
       <!-- Mobile Navigation -->
-      <div class="md:hidden">
+      <div id="mobile-menu" class="hidden md:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
           <a
             href="#features"
