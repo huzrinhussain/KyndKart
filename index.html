@@ -7,8 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-      // JavaScript to toggle mobile menu and hamburger icon
+      // Initialize Lucide Icons
       document.addEventListener("DOMContentLoaded", function () {
+        lucide.createIcons(); // Ensure Lucide icons are rendered
+
+        // JavaScript to toggle mobile menu and hamburger icon
         const mobileMenuButton = document.getElementById("mobile-menu-button");
         const mobileMenu = document.getElementById("mobile-menu");
         const menuIcon = document.getElementById("menu-icon");
@@ -116,7 +119,6 @@
         </div>
       </div>
     </nav>
-
     <!-- Add padding to account for fixed navbar -->
     <div class="pt-16">
       <!-- Hero Section -->
